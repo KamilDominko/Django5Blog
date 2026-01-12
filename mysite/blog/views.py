@@ -2,6 +2,32 @@ from django.shortcuts import render, get_object_or_404
 from .models import Post
 from django.http import Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views.generic import ListView
+from .forms import EmailPostForm
+
+
+def post_share(request, post_id):
+    # Pobierz post według identyfikatora
+    post = get_object_or_404(Post, id=post_id, status=Post.Status.PUBLISHED)
+    if request.method == "POST":
+        # Formularz został przesłany
+        form = EmailPostForm(request.POST)
+        if form.is_valid():
+            # Pomyślnie zweryfikowano poprawność pól formularza
+            cd = form.cleaned_data
+            # ...wyślij email
+    else:
+        form = EmailPostForm()
+    return render(request, "blog/post/share.html", {"post": post, "form": form})
+
+
+class PostListView(ListView):
+    """Alternatywny widok listy postów."""
+
+    queryset = Post.published.all()
+    context_object_name = "posts"
+    paginate_by = 3
+    template_name = "blog/post/list.html"
 
 
 def post_list(request):
