@@ -4,21 +4,39 @@ from django.http import Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from .forms import EmailPostForm
+from django.core.mail import send_mail
 
 
 def post_share(request, post_id):
     # Pobierz post według identyfikatora
     post = get_object_or_404(Post, id=post_id, status=Post.Status.PUBLISHED)
+    sent = False
     if request.method == "POST":
         # Formularz został przesłany
         form = EmailPostForm(request.POST)
         if form.is_valid():
             # Pomyślnie zweryfikowano poprawność pól formularza
             cd = form.cleaned_data
-            # ...wyślij email
+            post_url = request.build_absolute_uri(post.get_absolute_url())
+            subject = (
+                f"{cd["name"]} {cd["email"]} " f"poleca Ci przeczytanie {post.title}"
+            )
+            message = (
+                f"Przeczytaj {post.title} pod adresem {post_url}\n\n"
+                f"komentarze {cd["name"]}: {cd["comments"]}"
+            )
+            send_mail(
+                subject=subject,
+                message=message,
+                from_email=None,
+                recipient_list=[cd["to"]],
+            )
+            sent = True
     else:
         form = EmailPostForm()
-    return render(request, "blog/post/share.html", {"post": post, "form": form})
+    return render(
+        request, "blog/post/share.html", {"post": post, "form": form, "sent": sent}
+    )
 
 
 class PostListView(ListView):
