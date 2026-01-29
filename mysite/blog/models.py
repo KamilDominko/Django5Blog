@@ -26,11 +26,12 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=2, choices=Status, default=Status.DRAFT)
+    featured = models.BooleanField(default=False)
 
     objects = models.Manager()  # Menedżer domyślny
     published = PublishedManager()  # Menedżer niestandardowy
 
-    tags = TaggableManager()
+    tags = TaggableManager(blank=True)
 
     class Meta:
         ordering = ["-publish"]

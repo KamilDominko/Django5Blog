@@ -10,6 +10,27 @@ from taggit.models import Tag
 from django.db.models import Count
 
 
+class FeaturedPostListView(ListView):
+    queryset = Post.objects.filter(featured=True)
+    template_name = "blog/post/featured.html"
+    context_object_name = "featured"
+    paginate_by = 2
+
+
+def featured_posts(request):
+    featured_list = Post.objects.filter(featured=True)
+    paginator = Paginator(featured_list, 3)
+    page_number = request.GET.get("page", 1)
+    featured = paginator.get_page(page_number)
+    # try:
+    #     featured = paginator.page(page_number)
+    # except EmptyPage:
+    #     featured = paginator.page(paginator.num_pages)
+    # except PageNotAnInteger:
+    #     featured = paginator.page(1)
+    return render(request, "blog/post/featured.html", {"featured": featured})
+
+
 def post_share(request, post_id):
     # Pobierz post według identyfikatora
     post = get_object_or_404(Post, id=post_id, status=Post.Status.PUBLISHED)

@@ -1,18 +1,28 @@
 from django.contrib import admin
 from .models import Post, Comment
+from django import forms
 
 # Register your models here.
 
 # admin.site.register(Post)
 
 
+class PostAdminForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = "__all__"
+        widgets = {
+            "featured": forms.RadioSelect(choices=[(True, "Tak"), (False, "Nie")])
+        }
+
+
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
 
     # list_display dodaje w oknie panelu administratora dodatkowe informacje na temat każdego posta
-    list_display = ["title", "slug", "author", "publish", "status"]
+    list_display = ["title", "slug", "author", "publish", "status", "featured"]
 
-    # list_filetr dodaje filtrowanie postów pod kątm podanych pól
+    # list_filetr dodaje filtrowanie postów pod kątem podanych pól
     list_filter = ["status", "created", "publish", "author"]
 
     # lista pól do przeszukiwania postów - poasek wyszukiwania szuka frazy w podanych polach postów
@@ -32,6 +42,9 @@ class PostAdmin(admin.ModelAdmin):
 
     # pokazuje przy na pasku filtrów, ile jest postów zawierajacych każdy aspekt
     show_facets = admin.ShowFacets.ALWAYS
+
+    # radio_fields = {"featured": admin.VERTICAL}
+    form = PostAdminForm
 
 
 @admin.register(Comment)

@@ -18,4 +18,6 @@ urlpatterns = [
     path("<int:post_id>/share/", views.post_share, name="post_share"),
     path("<int:post_id>/comment", views.post_comment, name="post_comment"),
     path("feed/", LatestPostFeed(), name="post_feed"),
+    path("featured/", views.featured_posts, name="featured_posts"),
+    # path("featured/", views.FeaturedPostListView.as_view(), name="featured_posts"),
 ]

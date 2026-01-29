@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<h1>Wyróżnione posty</h1>
+<ul>
+    {% for post in featured %}
+    <li>
+        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+    </li>
+    {% empty %}
+    <li>Brak wyróżnionych postów.</li>
+    {% endfor %}
+</ul>
+<!-- {% include "pagination.html" with page=page_obj %} -->
+<!-- {% if featured.has_other_pages %}
+<div class="pagination">
+    {% if featured.has_previous %}
+    <a href="?page={{ featured.previous_page_number }}">Poprzednia</a>
+    {% endif %}
+
+    <span>Strona {{ featured.number }} z {{ featured.paginator.num_pages }}</span>
+
+    {% if featured.has_next %}
+    <a href="?page={{ featured.next_page_number }}">Następna</a>
+    {% endif %}
+</div>
+{% endif %} -->
+{% include "pagination.html" with page=featured %}
+{% endblock %}
