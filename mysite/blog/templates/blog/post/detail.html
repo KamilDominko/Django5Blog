@@ -6,7 +6,7 @@
 {% block content %}
 <h1>{{ post.title }}</h1>
 <p class="date">
-    Opublikowany {{ post.publish }} przez {{ post.author }}
+    Opublikowany {{ post.publish }} przez {{ post.author }} {{ post.viewed }} 👁
 </p>
 {{ post.body|markdown }}
 <p>

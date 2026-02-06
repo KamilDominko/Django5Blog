@@ -102,6 +102,9 @@ def post_detail(request, year, month, day, post):
         publish__month=month,
         publish__day=day,
     )
+    # Zwiększenie licznika wyświetleń posta
+    post.viewed += 1
+    post.save()
     # Lista aktywnych komentarzy do tego posta
     comments = post.comments.filter(active=True)
     # Formularz do wprowadzenia komentarzy użytkowników

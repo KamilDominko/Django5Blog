@@ -33,6 +33,8 @@ class Post(models.Model):
 
     tags = TaggableManager(blank=True)
 
+    viewed = models.IntegerField(default=0)
+
     class Meta:
         ordering = ["-publish"]
         indexes = [models.Index(fields=["-publish"])]
