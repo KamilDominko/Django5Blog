@@ -20,4 +20,6 @@ urlpatterns = [
     path("feed/", LatestPostFeed(), name="post_feed"),
     path("featured/", views.featured_posts, name="featured_posts"),
     # path("featured/", views.FeaturedPostListView.as_view(), name="featured_posts"),
+    path("archive/", views.post_archive, name="post_archive"),
+    path("archive/<int:year>/", views.post_archive_year, name="post_archive_year"),
 ]

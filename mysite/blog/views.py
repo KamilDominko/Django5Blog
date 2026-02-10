@@ -145,3 +145,18 @@ def post_comment(request, post_id):
         "blog/post/comment.html",
         {"post": post, "form": form, "comment": comment},
     )
+
+
+def post_archive(request):
+    years = Post.published.dates("publish", "year", "DESC")
+    return render(request, "blog/post/archive.html", {"years": years})
+
+
+def post_archive_year(request, year):
+    posts = Post.published.filter(publish__year=year)
+    paginator = Paginator(posts, 5)
+    page_number = request.GET.get("page", 1)
+    posts = paginator.get_page(page_number)
+    return render(
+        request, "blog/post/archive_year.html", {"posts": posts, "year": year}
+    )

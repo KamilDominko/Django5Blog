@@ -32,6 +32,11 @@
                 Wyróżnione wpisy
             </a>
         </p>
+        <p>
+            <a href="{% url 'blog:post_archive' %}">
+                Archiwum
+            </a>
+        </p>
         <h3>Najnowsze posty</h3>
         {% show_latest_posts 3 %}
         <h3>Najczęściej komentowane posty</h3>
