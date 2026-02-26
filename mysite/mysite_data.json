@@ -1,0 +1,1554 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "taggit",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "taggit",
+    "model": "taggeditem"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "fields": {
+    "app_label": "sites",
+    "model": "site"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hbefk9y20qejeh0exn16wjwlqyahc936",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP-FsyEs3S3Uo_d-A-GxlaqBpLQn478bkh70OjOZt3D-2LM7Gm9uTeIqQFx-WfDxyaWL9PDlXmWsZd_WIHsiT9vkXBO_bmf7N8i-5b6FwLgQ2YGs19YMxDAoYwkBxkgLo8UQRmJjkHSKUwBFUaEmS4R6Ep8vrmY2LA:1vpsd4:tYoDqyuHTy2pfA1WNDg74MvxQZyFZb53pt0RGWmJi6Y",
+    "expire_date": "2026-02-24T18:38:30.406Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i4co0doz10305jqv49xvrzglxfe52v0i",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP-FsyEs3S3Uo_d-A-GxlaqBpLQn478bkh70OjOZt3D-2LM7Gm9uTeIqQFx-WfDxyaWL9PDlXmWsZd_WIHsiT9vkXBO_bmf7N8i-5b6FwLgQ2YGs19YMxDAoYwkBxkgLo8UQRmJjkHSKUwBFUaEmS4R6Ep8vrmY2LA:1vcqpu:W_Y-QRqrEbw6uGJlkniXenhyatNRV6iw6MpTc5-1CTU",
+    "expire_date": "2026-01-19T20:05:54.410Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rwm23yrrdgp2litrahy3us3el6t4gwah",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQAP-FsyEs3S3Uo_d-A-GxlaqBpLQn478bkh70OjOZt3D-2LM7Gm9uTeIqQFx-WfDxyaWL9PDlXmWsZd_WIHsiT9vkXBO_bmf7N8i-5b6FwLgQ2YGs19YMxDAoYwkBxkgLo8UQRmJjkHSKUwBFUaEmS4R6Ep8vrmY2LA:1vjjnm:TVDo5MDOBP7vTdsfeIIjF7woCAF5_oeVeWmtmGuqMbY",
+    "expire_date": "2026-02-07T20:00:10.996Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tnfli1teei57mot44cc1016s5amzfpi7",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHM9AG4dN9vIDMwStVAUtqV8d-1SRe6veec-1KBtjWHrckS5qTOCtTpd2OKDyk7SHcqt6pjLesys94VfdCmp5rkeTncv4NMLX9rCwBIQpTEC3mHnCxgBBzGKL11ETvDxtHVymAZwHjToYwsaNF10Kv3B-WkN1g:1vcqMm:Zh8xHvgUkuy2nxcLQlIBwqZ8au-awSkmSGZbfNGicLo",
+    "expire_date": "2026-01-19T19:35:48.572Z"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 11,
+    "name": "Kamil",
+    "email": "kamil@email.com",
+    "body": "Bardzo ciekawy post.",
+    "created": "2026-01-18T14:31:55.035Z",
+    "updated": "2026-01-18T14:31:55.035Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 11,
+    "name": "kakakaka",
+    "email": "e@mail.jp",
+    "body": "test",
+    "created": "2026-01-18T14:32:37.658Z",
+    "updated": "2026-01-18T14:34:43.742Z",
+    "active": false
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 11,
+    "name": "marek",
+    "email": "marek@gej.hej",
+    "body": "ale superuśkie to i wogle",
+    "created": "2026-01-18T14:34:26.643Z",
+    "updated": "2026-01-18T14:34:26.643Z",
+    "active": true
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "jazz",
+    "slug": "jazz"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "muzyka",
+    "slug": "muzyka"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 4,
+  "fields": {
+    "name": "nauka",
+    "slug": "nauka"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 3,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 4,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 1
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 2,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 6,
+  "fields": {
+    "tag": 3,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 7,
+  "fields": {
+    "tag": 2,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 8,
+  "fields": {
+    "tag": 4,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 11
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 9,
+  "fields": {
+    "tag": 2,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 10
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 10,
+  "fields": {
+    "tag": 4,
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": 12
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "localhost:8000",
+    "name": "localhost:8000"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": [
+      "admin",
+      "logentry"
+    ],
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view permission",
+    "content_type": [
+      "auth",
+      "permission"
+    ],
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view group",
+    "content_type": [
+      "auth",
+      "group"
+    ],
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view user",
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view content type",
+    "content_type": [
+      "contenttypes",
+      "contenttype"
+    ],
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view session",
+    "content_type": [
+      "sessions",
+      "session"
+    ],
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add post",
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change post",
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete post",
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view post",
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add comment",
+    "content_type": [
+      "blog",
+      "comment"
+    ],
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change comment",
+    "content_type": [
+      "blog",
+      "comment"
+    ],
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": [
+      "blog",
+      "comment"
+    ],
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view comment",
+    "content_type": [
+      "blog",
+      "comment"
+    ],
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add tag",
+    "content_type": [
+      "taggit",
+      "tag"
+    ],
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change tag",
+    "content_type": [
+      "taggit",
+      "tag"
+    ],
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": [
+      "taggit",
+      "tag"
+    ],
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view tag",
+    "content_type": [
+      "taggit",
+      "tag"
+    ],
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add tagged item",
+    "content_type": [
+      "taggit",
+      "taggeditem"
+    ],
+    "codename": "add_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change tagged item",
+    "content_type": [
+      "taggit",
+      "taggeditem"
+    ],
+    "codename": "change_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete tagged item",
+    "content_type": [
+      "taggit",
+      "taggeditem"
+    ],
+    "codename": "delete_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view tagged item",
+    "content_type": [
+      "taggit",
+      "taggeditem"
+    ],
+    "codename": "view_taggeditem"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can add site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "add_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can change site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "change_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can delete site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "delete_site"
+  }
+},
+{
+  "model": "auth.permission",
+  "fields": {
+    "name": "Can view site",
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "codename": "view_site"
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$nS9BtYZqvZbELHU5mmTf93$+pO4befMRbbWD+q6DfUw9Jnhat6B9t7ZyraNEgo2yVs=",
+    "last_login": "2026-02-10T18:38:30.401Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-05T19:32:50.650Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "title": "Powrót do nauki",
+    "slug": "powrot-do-nauki",
+    "author": [
+      "admin"
+    ],
+    "body": "wracam do nauki i mam zamiar uczyć się systematycznie",
+    "publish": "2026-01-05T20:10:28Z",
+    "created": "2026-01-05T20:10:33.027Z",
+    "updated": "2026-02-26T16:30:24.167Z",
+    "status": "PB",
+    "featured": true,
+    "viewed": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "title": "nauka panelu administracyjnego",
+    "slug": "nauka-panelu-administracyjnego",
+    "author": [
+      "admin"
+    ],
+    "body": "uczę się jak działa panel administracyjny oraz to jak go można dostosować do swoich potrzeb",
+    "publish": "2026-01-05T20:29:40Z",
+    "created": "2026-01-05T20:30:05.459Z",
+    "updated": "2026-01-29T22:35:13.006Z",
+    "status": "DF",
+    "featured": true,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "mleko z miodem",
+    "slug": "mleko-z-miodem",
+    "author": [
+      "admin"
+    ],
+    "body": "przepis na przepyszne mleko z miodem",
+    "publish": "2026-01-05T20:30:32Z",
+    "created": "2026-01-05T20:30:35.797Z",
+    "updated": "2026-02-10T18:26:57.053Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "wołowina po girzycku",
+    "slug": "wolowina-po-girzycku",
+    "author": [
+      "admin"
+    ],
+    "body": "przepis na wołowinę po girzycku, o ile taka istnieje",
+    "publish": "2026-01-05T20:31:07Z",
+    "created": "2026-01-05T20:31:08.014Z",
+    "updated": "2026-01-29T22:35:26.487Z",
+    "status": "PB",
+    "featured": true,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "Nowy tytuł",
+    "slug": "inny-post",
+    "author": [
+      "admin"
+    ],
+    "body": "Treść posta.",
+    "publish": "2026-01-07T21:35:10.773Z",
+    "created": "2026-01-07T21:35:17.077Z",
+    "updated": "2026-01-07T21:39:10.377Z",
+    "status": "DF",
+    "featured": false,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "title": "Kim Kardaszjan",
+    "slug": "kim-kardaszjan",
+    "author": [
+      "admin"
+    ],
+    "body": "Kim  jest Kim Kardaszjan? Nie wiadomo!",
+    "publish": "2026-01-08T17:35:33Z",
+    "created": "2026-01-08T17:35:36.609Z",
+    "updated": "2026-01-08T17:35:36.609Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "title": "mam zły humor",
+    "slug": "mam-zly-humor",
+    "author": [
+      "admin"
+    ],
+    "body": "tak se się czuje",
+    "publish": "2026-01-09T18:35:16Z",
+    "created": "2026-01-09T18:35:16.830Z",
+    "updated": "2026-01-09T18:35:16.830Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "title": "Jakiś post 1 2 3",
+    "slug": "jakis-post-1-2-3",
+    "author": [
+      "admin"
+    ],
+    "body": "Jakiś post raz, dwa, trzy",
+    "publish": "2026-01-11T16:52:16Z",
+    "created": "2026-01-11T16:52:17.268Z",
+    "updated": "2026-01-11T16:52:17.268Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "title": "Inny post 2 3 4",
+    "slug": "inny-post-2-3-4",
+    "author": [
+      "admin"
+    ],
+    "body": "Inny post dwa, trzy, cztery",
+    "publish": "2026-01-11T16:52:37Z",
+    "created": "2026-01-11T16:52:37.678Z",
+    "updated": "2026-01-11T16:52:37.678Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 0
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 10,
+  "fields": {
+    "title": "Nutalia jest pyszna",
+    "slug": "nutalia-jest-pyszna",
+    "author": [
+      "admin"
+    ],
+    "body": "Nutalia jest przerpyszna.",
+    "publish": "2026-01-11T16:52:59Z",
+    "created": "2026-01-11T16:53:00.439Z",
+    "updated": "2026-02-26T16:30:23.270Z",
+    "status": "PB",
+    "featured": true,
+    "viewed": 3
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "title": "Makaron boloński spaghetti",
+    "slug": "makaron-bolonski-spaghetti",
+    "author": [
+      "admin"
+    ],
+    "body": "Jest to pełny przepis na słynne danie pochodzące ze wschodniej części Włoch.",
+    "publish": "2026-01-11T16:53:29Z",
+    "created": "2026-01-11T16:53:29.818Z",
+    "updated": "2026-02-26T16:30:21.944Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 7
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 12,
+  "fields": {
+    "title": "Markdown",
+    "slug": "markdown",
+    "author": [
+      "admin"
+    ],
+    "body": "To jest post sformatowany za pomocą składni Markdown\r\n---------------------------------------------------------------\r\n*Ten zapis oznacza wyróżnienie*, natomiast **ten pogrubienie**.\r\n\r\nPoniżej mamy listę:\r\n\r\n* Jeden\r\n* Dwa\r\n* Trzy\r\n\r\nTutaj jest [link do witryny Django](https://www.djangoproject.com/)\r\n\r\nTest\r\n\r\n- 1\r\n- 2\r\n- 3",
+    "publish": "2026-01-25T14:06:05Z",
+    "created": "2026-01-25T14:06:10.258Z",
+    "updated": "2026-02-06T18:16:15.879Z",
+    "status": "PB",
+    "featured": true,
+    "viewed": 10
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 13,
+  "fields": {
+    "title": "Kryptowaluty",
+    "slug": "kryptowaluty",
+    "author": [
+      "admin"
+    ],
+    "body": "sadfas fd asfd asf asf w qwrjqwoq uqw fqw fuqifd xabv asiujf bashdbfg",
+    "publish": "2025-08-07T18:38:33Z",
+    "created": "2026-02-10T18:39:08.342Z",
+    "updated": "2026-02-10T18:39:36.565Z",
+    "status": "PB",
+    "featured": false,
+    "viewed": 2
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-01-05T20:10:33.029Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "1",
+    "object_repr": "Powrót do nauki",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-01-05T20:30:05.461Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "nauka panelu administracyjnego",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-01-05T20:30:35.799Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "3",
+    "object_repr": "mleko z miodem",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-01-05T20:31:08.016Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "wołowina po girzycku",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-01-08T17:35:36.611Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "6",
+    "object_repr": "Kim Kardaszjan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-01-09T18:35:16.833Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "7",
+    "object_repr": "mam zły humor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-01-11T16:52:17.269Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "8",
+    "object_repr": "Jakiś post 1 2 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-01-11T16:52:37.680Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "9",
+    "object_repr": "Inny post 2 3 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-01-11T16:53:00.441Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "10",
+    "object_repr": "Nutalia jest pyszna",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-01-11T16:53:29.819Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "11",
+    "object_repr": "Makaron boloński spaghetti",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-01-18T14:34:43.744Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "comment"
+    ],
+    "object_id": "2",
+    "object_repr": "Komentarz dodany przez kakakaka dla posta Makaron boloński spaghetti",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Active\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-01-19T16:24:51.033Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "1",
+    "object_repr": "Powrót do nauki",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-01-24T20:00:24.080Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "3",
+    "object_repr": "mleko z miodem",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-01-24T20:01:41.308Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "11",
+    "object_repr": "Makaron boloński spaghetti",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-01-24T20:01:46.325Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "10",
+    "object_repr": "Nutalia jest pyszna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-01-25T14:06:10.264Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-01-25T14:06:51.450Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-01-25T14:07:13.479Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-01-25T14:07:22.519Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-01-25T14:07:36.265Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-01-25T14:07:48.853Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-01-25T14:07:59.343Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "12",
+    "object_repr": "Markdown",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-01-25T14:41:48.602Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "object_id": "1",
+    "object_repr": "localhost:8000",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-01-29T22:32:26.983Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "3",
+    "object_repr": "mleko z miodem",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-01-29T22:35:13.010Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "2",
+    "object_repr": "nauka panelu administracyjnego",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-01-29T22:35:26.491Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "4",
+    "object_repr": "wołowina po girzycku",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-01-29T22:35:32.014Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "10",
+    "object_repr": "Nutalia jest pyszna",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-01-29T22:35:36.213Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "1",
+    "object_repr": "Powrót do nauki",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Featured\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-02-10T18:39:08.345Z",
+    "user": [
+      "admin"
+    ],
+    "content_type": [
+      "blog",
+      "post"
+    ],
+    "object_id": "13",
+    "object_repr": "Kryptowaluty",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+}
+]
