@@ -3,11 +3,12 @@ from .models import Post
 from django.http import Http404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
-from .forms import EmailPostForm, CommentForm
+from .forms import EmailPostForm, CommentForm, SearchForm
 from django.core.mail import send_mail
 from django.views.decorators.http import require_POST
 from taggit.models import Tag
 from django.db.models import Count
+from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 
 
 class FeaturedPostListView(ListView):
@@ -42,12 +43,10 @@ def post_share(request, post_id):
             # Pomyślnie zweryfikowano poprawność pól formularza
             cd = form.cleaned_data
             post_url = request.build_absolute_uri(post.get_absolute_url())
-            subject = (
-                f"{cd["name"]} {cd["email"]} " f"poleca Ci przeczytanie {post.title}"
-            )
+            subject = f"{cd['name']} {cd['email']} poleca Ci przeczytanie {post.title}"
             message = (
                 f"Przeczytaj {post.title} pod adresem {post_url}\n\n"
-                f"komentarze {cd["name"]}: {cd["comments"]}"
+                f"komentarze {cd['name']}: {cd['comments']}"
             )
             send_mail(
                 subject=subject,
@@ -58,9 +57,7 @@ def post_share(request, post_id):
             sent = True
     else:
         form = EmailPostForm()
-    return render(
-        request, "blog/post/share.html", {"post": post, "form": form, "sent": sent}
-    )
+    return render(request, "blog/post/share.html", {"post": post, "form": form, "sent": sent})
 
 
 class PostListView(ListView):
@@ -157,6 +154,31 @@ def post_archive_year(request, year):
     paginator = Paginator(posts, 5)
     page_number = request.GET.get("page", 1)
     posts = paginator.get_page(page_number)
+    return render(request, "blog/post/archive_year.html", {"posts": posts, "year": year})
+
+
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
+
+    if "query" in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data["query"]
+            search_vector = SearchVector("title", weight="A") + SearchVector("body", weight="B")
+            search_query = SearchQuery(query)
+            results = (
+                Post.published.annotate(
+                    search=search_vector,
+                    rank=SearchRank(search_vector, search_query),
+                )
+                # .filter(search=search_query)
+                .filter(rank__gte=0.3)
+                .order_by("-rank")
+            )
     return render(
-        request, "blog/post/archive_year.html", {"posts": posts, "year": year}
+        request,
+        "blog/post/search.html",
+        {"form": form, "query": query, "results": results},
     )

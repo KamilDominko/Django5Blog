@@ -22,4 +22,5 @@ urlpatterns = [
     # path("featured/", views.FeaturedPostListView.as_view(), name="featured_posts"),
     path("archive/", views.post_archive, name="post_archive"),
     path("archive/<int:year>/", views.post_archive_year, name="post_archive_year"),
+    path("search/", views.post_search, name="post_search"),
 ]
